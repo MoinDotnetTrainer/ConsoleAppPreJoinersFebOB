@@ -26,8 +26,48 @@ namespace ConsoleAppPreJoinersFebOB
             // Parsing obj = new Parsing();
             //obj.Parsing_Ex();
 
-            Arraysclass obj = new Arraysclass();
-            obj.Arrays_example();
+            // Arraysclass obj = new Arraysclass(); // realtime entity
+            //obj.Arrays_example();
+
+            // human being --> person
+
+            /*Class_Example obj = new Class_Example();
+             int res = obj.Add(12, 2);
+             if (res == 14)
+             {
+                 Console.WriteLine("if block");
+             }
+             else
+             {
+                 Console.WriteLine("Els block");
+             }
+             int myres = obj.sub(12, 2);
+             obj.mul();
+             obj.Div();
+            */
+
+            // StaticMethod.Add();
+            // StaticMethod.Sub();
+
+            // StaticMethod obj = new StaticMethod();
+            //obj.mul();
+
+            // again m again no need of creating object
+
+
+            // MethodOverloading.M1("12");
+
+            //ConstrExample obj = new ConstrExample();
+            //obj.Add();
+
+            // staticclass_Ex.Add();
+
+            // ConstrExample obj = new ConstrExample(12);  // explict am calling the const
+
+            // staticclass_Ex.Add();
+
+            MethodsWithOptnl.Add(y:12,x:2);  // x= 12 , y = 2
+            MethodsWithOptnl.M1(13);
         }
     }
 }
