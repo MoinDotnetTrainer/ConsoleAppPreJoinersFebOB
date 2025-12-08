@@ -14,7 +14,7 @@ namespace ConsoleAppPreJoinersFebOB
             int[] arr = { 345, 45, 65, 765, 7, 86, 8 };
             // index 0
             Console.WriteLine(arr[0]);
-            string[] strings = { "Hi", "Hello" };
+            string[] strings = { "Hi", "Hello" }; 
             Console.WriteLine(strings[0]);
             float[] floats = { 23.4f, 45.56f };
             Console.WriteLine(floats[0]);
