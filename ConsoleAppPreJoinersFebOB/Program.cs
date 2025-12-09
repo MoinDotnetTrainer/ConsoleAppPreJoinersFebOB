@@ -66,8 +66,24 @@ namespace ConsoleAppPreJoinersFebOB
 
             // staticclass_Ex.Add();
 
-            MethodsWithOptnl.Add(y:12,x:2);  // x= 12 , y = 2
-            MethodsWithOptnl.M1(13);
+            // MethodsWithOptnl.Add(y:12,x:2);  // x= 12 , y = 2
+            // MethodsWithOptnl.M1(13);
+
+            // Parent p = new Parent();
+            // p.Add();
+            //Child c = new Child();
+            //c.x = 46;
+            //c.y = 78;
+            //c.Sub();
+            //c.Add();
+
+            RBIBank obj = new RBIBank();
+            obj.Withdraw();
+            obj.Deposite();
+            obj.EmpInfo();
+            obj.EmpSal();
+
+            Banking.M3();
         }
     }
 }
