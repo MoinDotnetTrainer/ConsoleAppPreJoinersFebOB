@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppPreJoinersFebOB
 {
+    partial class PartialEx
+    {
+        public void M3() { } // dev3
+    }
     class GP
     {
         public int x, y, z;

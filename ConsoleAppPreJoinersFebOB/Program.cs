@@ -1,4 +1,5 @@
 ﻿using System;  //header file
+using ClassLibrary1;
 namespace ConsoleAppPreJoinersFebOB
 {
     internal class Program
@@ -77,13 +78,46 @@ namespace ConsoleAppPreJoinersFebOB
             //c.Sub();
             //c.Add();
 
-            RBIBank obj = new RBIBank();
-            obj.Withdraw();
-            obj.Deposite();
-            obj.EmpInfo();
-            obj.EmpSal();
+            //RBIBank obj = new RBIBank();
+            //obj.Withdraw();
+            //obj.Deposite();
+            //obj.EmpInfo();
+            //obj.EmpSal();
 
-            Banking.M3();
+            //Banking.M3();
+
+            //PartialEx p = new PartialEx();
+            //p.M1();
+
+            // Orders o = new Orders();
+            //o.M1();
+            //o.M2();
+            //o.M3();
+
+            // OrdersTest.M3(o,23,43);
+
+            //Debugging.M1();
+            //  Debugging.M2();
+
+
+            //  ConstrChainChild c = new ConstrChainChild();
+
+            //MathOPerations obj = new ClassLibrary1.MathOPerations();
+            //obj.ScientificCali();
+            //obj.Calculator();
+
+            // ExeceptionHandling obj = new ExeceptionHandling();
+            // obj.Test();
+
+            refout obj = new refout();
+            (int x, string y) = obj.M3();
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            obj.M4(12,2,out int Add, out int Sub);
+            Console.WriteLine(Add);
+            Console.WriteLine(Sub);
+
+            obj.Exe();
         }
     }
 }
