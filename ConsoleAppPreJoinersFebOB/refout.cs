@@ -12,7 +12,6 @@ namespace ConsoleAppPreJoinersFebOB
         public void M1()
         {
             Console.WriteLine("No");
-
         }
         public int M2()
         {

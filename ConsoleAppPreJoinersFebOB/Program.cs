@@ -1,5 +1,6 @@
 ﻿using System;  //header file
 using ClassLibrary1;
+using ClassLibrary2;
 namespace ConsoleAppPreJoinersFebOB
 {
     internal class Program
@@ -109,15 +110,71 @@ namespace ConsoleAppPreJoinersFebOB
             // ExeceptionHandling obj = new ExeceptionHandling();
             // obj.Test();
 
-            refout obj = new refout();
-            (int x, string y) = obj.M3();
-            Console.WriteLine(x);
-            Console.WriteLine(y);
-            obj.M4(12,2,out int Add, out int Sub);
-            Console.WriteLine(Add);
-            Console.WriteLine(Sub);
+            //refout obj = new refout();
+            //(int x, string y) = obj.M3();
+            //Console.WriteLine(x);
+            //Console.WriteLine(y);
 
-            obj.Exe();
+            //obj.M4(12, 2, out int Add, out int Sub);
+            //Console.WriteLine(Add);
+            //Console.WriteLine(Sub);
+
+            //obj.Exe();
+
+            //Sample obj = new Sample();
+            //obj.Test();
+
+
+            //try
+            //{
+            //    Prop obj = new Prop();
+            //    obj.x_ = 34;  // <=50
+            //    obj.y_ = 344;  // <=50
+            //    obj.Add();
+            //}
+            //catch (Exception x)
+            //{
+            //    Console.WriteLine(x.Message);
+            //}
+
+
+            /*try
+            {
+                Index_Ex obj = new Index_Ex();
+                obj[0] = -10;
+                obj[1] = 657;
+                obj[2] = 2563;
+                //obj[3] = 2563;
+                //obj[4] = 2783;
+                //obj[5] = 253;
+                Console.WriteLine(obj[0]);
+                Console.WriteLine(obj[1]);
+                Console.WriteLine(obj[2]);
+
+                //Console.WriteLine(obj[3]);
+                //Console.WriteLine(obj[4]);
+                //Console.WriteLine(obj[5]);
+            }
+            catch (Exception x)
+            {
+                Console.WriteLine(x.Message);
+            }
+            */
+
+            GenMethods.M1(12, 34);
+            GenMethods.M3<int, int>(23, 3);  // during the call
+            GenMethods.M3<string, int>("Test", 34);
+
+
+            GenericClass<int, int> obj = new GenericClass<int, int>();
+            obj.M1(34, 45);
+            obj.M2(34, 45);
+            obj.M3(34, 45);
+            obj.M4(34, 45);
+            obj.M5(34, 45);
+
+
+
         }
     }
 }
