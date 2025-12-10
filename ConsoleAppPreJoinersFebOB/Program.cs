@@ -1,11 +1,12 @@
 ﻿using System;  //header file
+using System.Threading.Tasks;
 using ClassLibrary1;
 using ClassLibrary2;
 namespace ConsoleAppPreJoinersFebOB
 {
     internal class Program
     {
-        static void Main(string[] args)  // main method  entry point
+        static async Task Main(string[] args)  // main method  entry point
         {
             //Console.WriteLine("Hello, World!");
 
@@ -161,19 +162,47 @@ namespace ConsoleAppPreJoinersFebOB
             }
             */
 
-            GenMethods.M1(12, 34);
-            GenMethods.M3<int, int>(23, 3);  // during the call
-            GenMethods.M3<string, int>("Test", 34);
+            //GenMethods.M1(12, 34);
+            //GenMethods.M3<int, int>(23, 3);  // during the call
+            //GenMethods.M3<string, int>("Test", 34);
 
 
-            GenericClass<int, int> obj = new GenericClass<int, int>();
-            obj.M1(34, 45);
-            obj.M2(34, 45);
-            obj.M3(34, 45);
-            obj.M4(34, 45);
-            obj.M5(34, 45);
+            //GenericClass<int, int> obj = new GenericClass<int, int>();
+            //obj.M1(34, 45);
+            //obj.M2(34, 45);
+            //obj.M3(34, 45);
+            //obj.M4(34, 45);
+            //obj.M5(34, 45);
+
+            // collections 
+
+            //  Collections.hashset();
+            //   Console.WriteLine("--");
+            //   Collections.ArraysList();
+
+            // MultiTasking obj = new MultiTasking();
 
 
+            // main method is a single threaded app 
+
+            // multiple sub thread
+
+            // Thread t1 = new Thread(obj.M1);
+            //t1.Start();
+
+            //Thread t2 = new Thread(obj.M2);
+            //t2.Start();
+
+
+           
+
+            WordWithoutAsync obj = new WordWithoutAsync();
+           
+
+            Task t = new Task(obj.GetFile1);
+            t.Start();
+            t.Wait();
+            Console.ReadLine();
 
         }
     }
