@@ -234,38 +234,41 @@ namespace ConsoleAppPreJoinersFebOB
             // two types of delegates 
             // single , multi cast
 
-           /* MyDelegate del = delegate (string msg)
-            {
-                Console.WriteLine("Anonymous method says: " + msg);
-            };
-            del.Invoke("hi");
+            /* MyDelegate del = delegate (string msg)
+             {
+                 Console.WriteLine("Anonymous method says: " + msg);
+             };
+             del.Invoke("hi");
 
-            call1 myex = delegate ()
-            {
-                Console.WriteLine("test");
-            };
-            myex.Invoke();
+             call1 myex = delegate ()
+             {
+                 Console.WriteLine("test");
+             };
+             myex.Invoke();
 
 
-            call1 res = () =>
-            {
-                Console.WriteLine("lamds method with 0 arg");
-            };
-            res.Invoke();
+             call1 res = () =>
+             {
+                 Console.WriteLine("lamds method with 0 arg");
+             };
+             res.Invoke();
 
-            // using lamba expression
+             // using lamba expression
 
-            MyDelegate lamdaex = (string msg) =>
-            {
-                Console.WriteLine(msg);
-            };
-            lamdaex.Invoke("lamba method ex");
+             MyDelegate lamdaex = (string msg) =>
+             {
+                 Console.WriteLine(msg);
+             };
+             lamdaex.Invoke("lamba method ex");
 
-            annomous.greet("test");
+             annomous.greet("test");
 
-            */
+             */
 
-            Console.WriteLine(annomous.isPositive(-34));
+            //  Console.WriteLine(annomous.isPositive(-34));
+
+            LinqExamples obj = new LinqExamples();
+            obj.Test1();
         }
     }
 }
