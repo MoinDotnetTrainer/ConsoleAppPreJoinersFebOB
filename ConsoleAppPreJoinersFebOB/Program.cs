@@ -187,23 +187,85 @@ namespace ConsoleAppPreJoinersFebOB
 
             // multiple sub thread
 
-            // Thread t1 = new Thread(obj.M1);
+            //Thread t1 = new Thread(obj.M1);
             //t1.Start();
 
-            //Thread t2 = new Thread(obj.M2);
-            //t2.Start();
+            // Thread t2 = new Thread(obj.M2);
+            // t2.Start();
 
 
-           
 
-            WordWithoutAsync obj = new WordWithoutAsync();
-           
 
-            Task t = new Task(obj.GetFile1);
-            t.Start();
-            t.Wait();
-            Console.ReadLine();
+            //WordWithoutAsync obj1 = new WordWithoutAsync();
 
+
+            //Task t = new Task(obj1.GetFile1);
+            //t.Start();
+            //t.Wait();
+            //Console.ReadLine();
+
+            //   refout.Test();
+
+
+
+            /*call1 c1 = new call1(Delegate_Ex.Add);  // it can call a method 
+            c1.Invoke();
+
+            call1 c2 = new call1(Delegate_Ex.Sub);  // it can call a method 
+            c2.Invoke();
+
+            call2 c3 = new call2(Delegate_Ex.Mul);  // it can call a method 
+            c3.Invoke(23, 3);
+
+            call2 c4 = new call2(Delegate_Ex.Div);  // it can call a method 
+            c4.Invoke(23, 3);
+
+
+
+            // multi cast
+
+            call1 mc = new call1(Delegate_Ex.Add);  // it can call a method 
+            mc += (Delegate_Ex.Sub);
+            mc.Invoke();
+            */
+
+
+
+            // two types of delegates 
+            // single , multi cast
+
+           /* MyDelegate del = delegate (string msg)
+            {
+                Console.WriteLine("Anonymous method says: " + msg);
+            };
+            del.Invoke("hi");
+
+            call1 myex = delegate ()
+            {
+                Console.WriteLine("test");
+            };
+            myex.Invoke();
+
+
+            call1 res = () =>
+            {
+                Console.WriteLine("lamds method with 0 arg");
+            };
+            res.Invoke();
+
+            // using lamba expression
+
+            MyDelegate lamdaex = (string msg) =>
+            {
+                Console.WriteLine(msg);
+            };
+            lamdaex.Invoke("lamba method ex");
+
+            annomous.greet("test");
+
+            */
+
+            Console.WriteLine(annomous.isPositive(-34));
         }
     }
 }

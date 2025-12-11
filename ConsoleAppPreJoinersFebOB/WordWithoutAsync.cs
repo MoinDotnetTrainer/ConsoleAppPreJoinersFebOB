@@ -39,7 +39,7 @@ namespace ConsoleAppPreJoinersFebOB
             int lenth = 0;
             using (StreamReader sr = new StreamReader(filename))
             {
-                string actualdata = await sr.ReadToEndAsync();
+                string actualdata =await  sr.ReadToEndAsync();
                 lenth = actualdata.Length;  //holds this exe without blocking others
                 Task.Delay(4000).Wait();
             }
@@ -50,17 +50,18 @@ namespace ConsoleAppPreJoinersFebOB
         {
             string filename = "C:\\Users\\m.a.khaja.moinuddin\\OneDrive - Accenture\\Desktop\\notes dotnet.txt";
             Task<int> words = Exe1(filename);
-          
+
             Console.WriteLine("Task1");  // not block
             Console.WriteLine("Task2");  // block
             Console.WriteLine("Task3");  // block
+
             int length = await words;
 
             Console.WriteLine("no of words:" + length);  // this is taking time
+
             Console.WriteLine("Task4");
             Console.WriteLine("Task5");
             Console.WriteLine("Task6");
-
         }
     }
 }

@@ -43,5 +43,21 @@ namespace ConsoleAppPreJoinersFebOB
             Cal(ref y);  // call by values
             Console.WriteLine("Print y after :" + y);  // 20
         }
+
+        public static void Test() {
+            string input = "123";
+            int number;
+
+            bool success = int.TryParse(input, out number);
+
+            if (success)
+            {
+                Console.WriteLine($"Conversion successful: {number}");
+            }
+            else
+            {
+                Console.WriteLine("Conversion failed!");
+            }
+        }
     }
 }

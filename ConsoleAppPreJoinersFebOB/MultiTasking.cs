@@ -21,7 +21,6 @@ namespace ConsoleAppPreJoinersFebOB
                 Console.WriteLine("Event:" + i);  // other event
             }
         }
-
         public void M2()
         {
             Console.WriteLine("M2");
